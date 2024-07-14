@@ -2,13 +2,31 @@ let btm = document.getElementById("btn");
 btm.addEventListener("mouseover" , mouseOver);
 btm.addEventListener("mouseout" , mouseOut);
 
+let downBtn = document.getElementById("down-btn")
+
+downBtn.addEventListener("mouseover", dounMouseOver)
+downBtn.addEventListener("mouseout" , dounMouseOut)
+
+function dounMouseOver(){
+    document.getElementById("personal").style.background = "#0891b2"
+
+}
+
+function dounMouseOut(){
+        document.getElementById("personal").style.background = "#172554"
+
+}
+
 
 function mouseOver() {
     document.getElementById("person").style.background = "#0891b2"
+
 }
 
 function mouseOut() {
     document.getElementById("person").style.background = "#172554"
+    // document.getElementById("personal").style.background = "#172554"
+
 }
 
 // MENU-BAR

@@ -7,40 +7,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Document</title>
 </head>
-<body>
+<body class="bg-white 2xl:bg-slate-200">
 
   <!-- navbar -->
-   <nav class="flex justify-between ">
-    <div class="flex text-center justify-center items-center  gap-x-8 ml-2">
-      <i id="menuBar" class="fa-solid fa-bars text-2xl ml-3 menuBar" ></i>
-      <img class="w-32" src="../logo.svg" alt="" srcset="">
+   <nav >
+    <div class=" flex justify-between items-center lg:hidden  ">
+    <div class="flex text-center justify-center items-center  gap-x-6 sm:gap-x-4 ml-2">
+
+      <i id="menuBar" class="fa-solid fa-bars text-2xl sm:text-3xl ml-3 " ></i>
+      <img class="w-32 sm:w-44 md:w-48 " src="../logo.svg" alt="" srcset="">
     </div>
 
     <div>
-      <button id="btn" class=" flex justify-center items-center m-2 border p-1 rounded-full bg-cyan-600 hover:bg-blue-950">
-        <span class="text-white py-0 px-3">Sign in</span>
-         <i id="person" class="fa-solid fa-user text-white border border-transparent rounded-full bg-blue-950 text-xl p-2 "></i>
+      <button id="btn" class="  flex justify-center items-center m-2 md:m-3 border p-1 rounded-full bg-cyan-600 hover:bg-blue-950">
+        <span class="text-white py-0  px-3  md:text-lg">Sign in</span>
+         <i id="person" class="fa-solid fa-user text-white border border-transparent rounded-full bg-blue-950 text-xl md:text-2xl p-2 "></i>
         </button>
     </div>
 
      <!-- small device -->
-     <div id="small" class="fixed bg-white inset-0  hidden   ">
+     <div id="small" class="fixed bg-white inset-0  hidden lg:hidden ">
       <!-- all function -->
        <div class="flex justify-between">
-      <div class="flex text-center justify-center items-center  gap-x-8 ml-2">
-        <i id="closebar" class="fa-solid fa fa-xmark text-2xl ml-3 " ></i>
-        <img class="w-32" src="../logo.svg" alt="" srcset="">
+      <div class="flex text-center justify-center items-center  gap-x-6 ml-2 sm:gap-x-4">
+        <i id="closebar" class="fa-solid fa fa-xmark text-2xl sm:text-3xl ml-3 " ></i>
+        <img class="w-32 sm:w-44 md:w-48" src="../logo.svg" alt="" srcset="">
       </div>
 
       <div>
-        <button id="btn" class=" flex justify-center items-center m-2 border p-1 rounded-full bg-cyan-600 hover:bg-blue-950">
-          <span class="text-white py-0 px-3">Sign in</span>
-           <i id="person" class="fa-solid fa-user text-white border border-transparent rounded-full bg-blue-950 text-xl p-2 "></i>
+        <button id="btn" class=" flex justify-center items-center m-2 md:m-3 border p-1 rounded-full bg-cyan-600 hover:bg-blue-950">
+          <span class="text-white py-0 px-3  md:text-lg">Sign in</span>
+           <i id="person" class="fa-solid fa-user text-white border border-transparent rounded-full bg-blue-950 text-xl p-2 md:text-2xl "></i>
           </button>
       </div>
     </div>
 
-    <div class="divide-y divide-slate-300">
+    <div class="divide-y divide-slate-300 sm:mt-3">
       <h1 class="text-lg p-3">Paytm for consumer</h1>
       <h1 class="text-lg p-3">Paytm for Business</h1>
       <h1 class="text-lg p-3">Investor Relations</h1>
@@ -50,14 +52,283 @@
 
     
       <div class=" absolute  bottom-2 flex justify-between items-center w-full p-2">
-      <img src="../paytmLogo.svg" alt="" class="w-10">
-      <p class="text-[12px] p-2 font-medium">Download Paytm App to Pay from anywhere</p>
+      <img src="../paytmLogo.svg" alt="" class="w-10 sm:w-14">
+      <p class="text-[12px] sm:text-[16px]  p-2 font-medium">Download Paytm App to Pay from anywhere</p>
       <button class="bg-cyan-600 p-2 rounded-2xl text-sm w-36 text-white font-medium">Download Now</button>
     </div>
     
+     </div>
+    </div>
 
+
+     <!-- SLOW THE LARGE SCREEN AND HIDE THE SMALL SCREEN -->
+
+     <div class="w-full bg-white">
+      <div class="hidden lg:flex justify-between items-center bg-white h-24   2xl:w-[1230px] 2xl:mx-auto">
+        <img class="w-40 xl:w-44" src="../logo.svg" alt="">
+
+        <ul class="flex space-x-4 2xl:space-x-7 font-medium text-[17px] xl:text-[19px]">
+         <li><a href="#">Paytm for Consumer</a></li>
+         <li><a href="#">Paytm For Business</a></li>
+         <li><a href="#">Investor Relations</a></li>
+         <li><a href="#">Company</a></li>
+         <li><a href="#">Career</a></li>
+        </ul>
+         
+        <button id="down-btn" class=" 2xl:w-[120px] flex justify-center items-center m-2  border p-1 rounded-full bg-cyan-600 hover:bg-blue-950">
+          <span class="text-white py-0  px-3 2xl:px-4 2xl:text-[14px] 2xl:font-medium ">Sign in</span>
+           <i id="personal" class="fa-solid fa-user text-white border border-transparent rounded-full bg-blue-950 text-xl 2xl:text-lg p-2 2xl:p-2"></i>
+          </button>
+      </div>
      </div>
    </nav>
+
+   <!-- Braner -->
+    <div class="2xl:bg-[#002970] 2xl:w-full">
+
+      <div class="bg-[#002970] 2xl:mx-auto h-16 flex justify-around py-7  2xl:w-[900px]">
+        <div class="flex justify-center items-center  space-x-3">
+          <img class="w-8" src="../icon/1664265268197.png" alt="">
+          <div class="text-white">
+            <p class="font-medium text-[12px] ">Investor Relations</p>
+            <p class="font-medium text-[12px]">Latest Updates <span><i class="fa-solid fa-arrow-right"></i></span></p>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center  space-x-3">
+          <img class="w-8" src="../icon/1664265322329.png" alt="">
+          <div class="text-white ">
+            <p class="font-medium text-[12px]  ">Careers @ Paytm</p>
+            <p class="font-medium text-[12px] ">Join the revolution <span><i class="fa-solid fa-arrow-right"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN SECTION-1 -->
+
+    <div class="bg-[#def2ff] ">
+      <div class="flex justify-center items-center flex-col relative">
+
+        <div class="absolute top-7 text-center">
+          <h1 class="text-[18px] font-bold">PAY OR TRANSFER MONEY</h1>
+          <H2 class="text-[16px] 2xl:text-[18px] font-medium">directly From Your Bank Account</H2>
+        </div>
+        <img src="../image/b0316d24.svg" alt="" srcset="">
+      </div>
+    </div>
+
+    <!-- MAIN SECTION 2 -->
+
+    <div class="bg-white w-full">
+      <div class="bg-[#0A7CD5] flex justify-around items-center space-x-6  w-[90%] 2xl:w-[95%] mx-auto rounded-xl py-4 px-2">
+
+        <div class="flex justify-center items-center flex-col">
+          <p class="text-[11px] bg-black text-white rounded-sm text-center ">App Only</p>
+          <img class="w-10" src="../icon/1715970933119.webp" alt="">
+          <p class="text-[13px] text-white font-medium">Scan & Pay</p>
+        </div>
+
+        <div class="flex justify-center items-center flex-col">
+          <p class="text-[11px] bg-black text-white rounded-sm text-center">App Only</p>
+          <img class="w-10" src="../icon/1715970981277.webp" alt="">
+          <p class="text-[13px] text-white font-medium">UPI Lite</p>
+        </div>
+
+        <div class="flex justify-center items-center flex-col">
+        <p class="text-[11px] bg-black text-white rounded-sm text-center">App Only</p>
+        <img class="w-10" src="../icon/1715970933119.webp" alt="">
+        <p class="text-[13px] text-white font-medium">Scan & Pay</p>
+      </div>
+
+        <div class="flex justify-center items-center flex-col">
+          <img class="w-10" src="../icon/1616660757899.png" alt="">
+          <p class="text-[13px] text-white font-medium">Passbook</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN SECTION 3 -->
+
+    <div class="mt-12">
+<h1 class="font-bold text-lg ml-7 py-5">Bill Payments by BBPS</h1>
+  <div class="flex justify-around items-center">
+    <div class="flex justify-center items-center flex-col">
+      <img class="w-12" src="../icon/1614072119245.png" alt="">
+      <p class="text-[12px] font-medium">Mobile Prepaid</p>
+    </div>
+
+    <div class="flex justify-center items-center flex-col">
+      <img class="w-12" src="../icon/1614072256855.png" alt="">
+      <p class="text-[12px] font-medium">Electicity</p>
+    </div>
+
+    <div class="flex justify-center items-center flex-col">
+      <img class="w-12" src="../icon/1614072138712.png" alt="">
+      <p class="text-[12px] font-medium">DTH</p>
+    </div>
+
+    <div class="flex justify-center items-center flex-col">
+      <img class="w-12" src="../icon/1611927436408.png" alt="">
+      <p class="text-[12px] font-medium">View All</p>
+    </div>
+  </div>
+    </div>
+
+    <!-- MAIN SECTION 4 -->
+
+    <div class="mt-12">
+      <h1 class="font-bold text-lg ml-7 py-5">Play & Win</h1>
+        <div class="flex justify-around items-center">
+          <div class="flex justify-center items-center flex-col">
+          <p class="text-[10px] p-[2px] bg-black text-white rounded-sm text-center ">Win $50 L</p>
+
+            <img class="w-12" src="../icon/1660314419410.png" alt="">
+            <p class="text-[12px] font-medium">Rummy</p>
+          </div>
+      
+          <div class="flex justify-center items-center flex-col">
+            <img class="w-12" src="../icon/1660314491902.png" alt="">
+            <p class="text-[12px] font-medium">Poker</p>
+          </div>
+      
+          <div class="flex justify-center items-center flex-col">
+            <img class="w-12" src="../icon/1660314551665.png" alt="">
+            <p class="text-[12px] font-medium">Win $10</p>
+          </div>
+      
+          <div class="flex justify-center items-center flex-col">
+            <img class="w-12" src="../icon/1660314618551.png" alt="">
+            <p class="text-[12px] font-medium">Win $1.5</p>
+          </div>
+        </div>
+          </div>
+
+
+          <!-- MAIN SECTION 5 -->
+
+
+          <div class="mt-12">
+            <h1 class="font-bold text-lg ml-7 py-5">Tickets</h1>
+              <div class="flex justify-around items-center">
+                <div class="flex justify-center items-center flex-col">
+      
+                  <img class="w-12" src="../icon/1614061224806.png" alt="">
+                  <p class="text-[12px] font-medium">Movie Tickets</p>
+                </div>
+            
+                <div class="flex justify-center items-center flex-col">
+                  <img class="w-12" src="../icon/1706882777110.avif" alt="">
+                  <p class="text-[12px] font-medium">Train Tickets</p>
+                </div>
+            
+                <div class="flex justify-center items-center flex-col">
+                  <p class="text-[10px] p-[2px] bg-black text-white rounded-sm text-center ">Up To 14%</p>
+                  <img class="w-12" src="../icon/1619418307977.webp" alt="">
+                  <p class="text-[12px] font-medium">Flight Tickets</p>
+                </div>
+            
+                <div class="flex justify-center items-center flex-col">
+                  <img class="w-12" src="../icon/1614074888860.png" alt="">
+                  <p class="text-[12px] font-medium">Bus Tickets</p>
+                </div>
+              </div>
+
+              <div class="flex justify-center items-center mt-6 ">
+                <button class="border border-blue-200 px-4 py-1 text-blue-600 rounded-xl font-semibold text-[14px]">All Services <i class="fa-solid fa-chevron-down text-center"></i></button>
+               </div>
+                </div>
+
+
+               <!-- MAIN SECTION 6 -->
+
+               <div class="bg-white mt-12 ml-5 p-5">
+                <h1 class="font-bold my-4"  >Download Paytm app</h1>
+
+                <div class="flex flex-col space-y-4 mt-8">
+                  <div class="flex space-x-4">
+                    <img class="w-12 h-12" src="../image2/1617889954881.webp" alt="">
+                    <div>
+                      <h1 class="font-bold text-[15px]">Scan any QR</h1>
+                      <p class="font-semibold text-[13px] text-gray-400">Make payments at mearby shops</p>
+                    </div>
+                  </div>
+
+                  <div class="flex space-x-4">
+                    <img class="w-12 h-12" src="../image2/1617890104236.png" alt="">
+                    <div>
+                      <h1 class="font-bold text-[15px]">App only offers</h1>
+                      <p class="font-semibold text-[13px] text-gray-400">View your personalized offers,scratchcards and points</p>
+                    </div>
+                  </div>
+
+                  <div class="flex space-x-4">
+                    <img class="w-12 h-12" src="../image2/1617890317932.webp" alt="">
+                    <div>
+                      <h1 class="font-bold text-[15px]">Safe and Secure</h1>
+                      <p class="font-semibold text-[13px] text-gray-400">At Paytm your trust is foremost, your money yours untill you get what you paid for</p>
+                    </div>
+                  </div>
+
+                  <div class="flex space-x-4">
+                    <img class="w-12 h-12" src="../image2/1617890352804.png" alt="">
+                    <div>
+                      <h1 class="font-bold text-[15px]">Faster and Smoother</h1>
+                      <p class="font-semibold text-[13px] text-gray-400">Faster and Smoother</p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="w-full mt-8">
+                  <div class="mx-auto w-[100%] 2xl:w-[99%] text-center  font-bold bg-sky-500 text-white  px-2 py-3 rounded-lg text-[15px] ">
+                     Download the app now
+                  </div>
+                 </div>
+               </div>
+
+               <!-- MAIN SECTION 7-->
+
+               
+          <div class="mt-12 py-3 bg-white">
+            <h1 class="font-bold text-lg ml-7 py-5">Also on Paytm</h1>
+              <div class="flex justify-around items-center">
+                <div class="flex justify-center items-center flex-col">
+      
+                  <img class="w-12" src="../image3/1706882708829.avif" alt="">
+                  <p class="text-[12px] font-medium">Train</p>
+                </div>
+            
+                <div class="flex justify-center items-center flex-col">
+                  <img class="w-12" src="../image3/1617108012198.png" alt="">
+                  <p class="text-[12px] font-medium">Buy Digital Gold</p>
+                </div>
+            
+                <div class="flex justify-center items-center flex-col">
+                  <img class="w-12" src="../image3/1632720545211.png" alt="">
+                  <p class="text-[12px] font-medium">Cricket</p>
+                </div>
+            
+                <div class="flex justify-center items-center flex-col">
+                  <img class="w-12" src="../image3/1611920330762.png" alt="">
+                  <p class="text-[12px] font-medium">Loans</p>
+                </div>
+              </div>
+
+              <div class="flex justify-center items-center mt-6 ">
+                <button class="border border-blue-200 px-4 py-1 text-blue-600 rounded-xl font-semibold text-[14px]">All Services <i class="fa-solid fa-chevron-down text-center"></i></button>
+               </div>
+                </div>
+
+
+
+
+               
+                 
+                   
+
+              
+   
 
 
 
