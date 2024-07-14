@@ -35,11 +35,16 @@ let menu = document.getElementById("menuBar");
 // let menu = document.querySelectorAll(".menuBar")
 let closeBar = document.getElementById("closebar")
 let smallMobile = document.getElementById("small")
+let head = document.getElementById("hide")
+let imgHide = document.getElementById("img-hide")
 
 menu.addEventListener("click", abc)
 
 function abc(){
     smallMobile.classList.toggle('hidden')
+    head.classList.toggle('hidden')
+    imgHide.classList.toggle('hidden')
+
 
 }
 
@@ -49,6 +54,9 @@ closeBar.addEventListener("click", showAll )
 
 function showAll(){
     smallMobile.classList.toggle('hidden')
+    head.classList.toggle('hidden')
+    imgHide.classList.toggle('hidden')
+
     
 }
   
